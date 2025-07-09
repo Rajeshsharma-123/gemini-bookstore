@@ -159,7 +159,7 @@ const AdminBookManager = () => {
                 >
                   <div className="relative pb-2/3 h-48">
                     <img
-                      src={`http://localhost:3000/${book.bookImage}`}
+                      src={`https://gemini-bookstore.onrender.com/${book.bookImage}`}
                       alt={book.title}
                       className="absolute h-full w-full object-cover"
                     />

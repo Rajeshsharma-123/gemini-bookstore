@@ -7,7 +7,7 @@ const UserInfoCard = ({ user }) => {
         <img
           src={
             user.profileImage
-              ? `http://localhost:3000/${user.profileImage}`
+              ? `https://gemini-bookstore.onrender.com/${user.profileImage}`
               : "https://via.placeholder.com/100"
           }
           alt="Profile"

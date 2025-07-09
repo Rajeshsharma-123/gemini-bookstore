@@ -104,7 +104,7 @@ const BookList = () => {
                 <div className="relative overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
                   <img
-                    src={`http://localhost:3000/${book.bookImage}`}
+                    src={`https://gemini-bookstore.onrender.com/${book.bookImage}`}
                     alt={book.title}
                     className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700"
                   />

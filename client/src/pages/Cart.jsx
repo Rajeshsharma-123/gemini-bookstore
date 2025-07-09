@@ -137,7 +137,7 @@ const Cart = () => {
                   {/* Book Image with Remove Button Overlay */}
                   <div className="relative overflow-hidden">
                     <img
-                      src={`http://localhost:3000/${book.bookImage}`}
+                      src={`https://gemini-bookstore.onrender.com/${book.bookImage}`}
                       alt={book.title}
                       className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700"
                     />
