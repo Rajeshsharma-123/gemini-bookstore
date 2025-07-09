@@ -22,7 +22,7 @@ router.post("/signup", async (req, res) => {
 
     const newUser = new User(data);
     const response = await newUser.save();
-    console.log("User created successfully:", response);
+  
 
     const payload = {
       id: response.id,
@@ -61,7 +61,7 @@ router.post("/login", async (req, res) => {
     }
 
     // generate Token
-    console.log("User logged in successfully:", user);
+    
     const token = generateToken(user);
 
     // return token as response
@@ -109,7 +109,7 @@ router.put("/profile/password", jwtAuthMiddleware, async (req, res) => {
     user.password = newPassword;
     await user.save();
 
-    console.log("password updated");
+    
     res.status(200).json({ message: "Password updated" });
   } catch (err) {
     console.error(err);

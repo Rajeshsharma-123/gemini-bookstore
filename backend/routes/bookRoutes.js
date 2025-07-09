@@ -18,7 +18,7 @@ const upload = multer({ storage });
 //  Middleware to check admin
 function adminOnly(req, res, next) {
 
-  console.log("Checking admin access for user:", req.user);
+  
   if (req.user && req.user.role === "admin") {
     return next();
   } else {
