@@ -93,7 +93,7 @@ const AdminBookManager = () => {
 
   const handleEdit = (book) => {
     setEditId(book._id);
-    console.log("Editing book:", book);
+   
     setFormData({
       title: book.title,
       author: book.author || "",

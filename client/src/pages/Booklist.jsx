@@ -18,7 +18,7 @@ const BookList = () => {
     try {
       const res = await axios.get("/books");
       setBooks(res.data.books);
-      console.log("Books fetched successfully:", res.data.books);
+      
     } catch (error) {
       toast.error("Failed to load books");
       console.error(error);

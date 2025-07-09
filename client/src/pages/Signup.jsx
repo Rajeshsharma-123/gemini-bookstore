@@ -28,7 +28,7 @@ const Signup = () => {
 
     try {
       const res = await axios.post("/users/signup", formData);
-      console.log("Signup successful:", res.data);
+      
       toast.success("Signup successful! Please login.");
       navigate("/login");
     } catch (err) {

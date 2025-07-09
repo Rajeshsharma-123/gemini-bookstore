@@ -26,7 +26,7 @@ const Login = () => {
 
     try {
       const res = await axios.post("/users/login", formData);
-      console.log("Login Success:", res.data);
+     
 
       login(res.data.token, res.data.user); // ✅ use context function here
 
